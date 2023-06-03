@@ -10,7 +10,7 @@ class FiveDayDataModel {
     }
 
     var f = json['dt_txt'].split(' ')[0].split('-')[2];
-    var l = json['dt_txt'].split(' ')[1].split(':')[0];
+    var l = json['dt_txt'].split(' ')[0].split('-')[1];
     var fandl = '$f-$l';
     return FiveDayDataModel(
       dateTime: fandl,
